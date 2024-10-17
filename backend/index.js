@@ -7,15 +7,12 @@ const router = require("./routes/task.routes");
 
 
 const app = express();
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT;
 const DB_URI = process.env.MONGO_URI;
 // const DB_URI = "mongodb://localhost:27017/task-manager";
 
 mongoose
-    .connect(DB_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+    .connect(DB_URI)
     .then(() => console.log("DB Connected!"))
     .catch((error) => console.log("Error in connecting DB", error));
 
