@@ -1,4 +1,4 @@
-const taskModel = require("../models/Task.model");
+const taskModel = require("../models/task.model");
 
 
 class TaskService {

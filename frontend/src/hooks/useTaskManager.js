@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createTask, updateTask } from "../servoice";
+import { createTask, updateTask } from "../service";
 // import { createTask, updateTask } from "./";
 
 export const useTaskManager = () => {

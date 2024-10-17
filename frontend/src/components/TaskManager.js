@@ -5,7 +5,7 @@ import TaskTable from "./TaskTable";
 import TaskModal from "./TaskModal";
 import { LoadingIndicator } from "./LoadingIndicator";
 import { useTasks, useTaskManager } from "../hooks";
-import { deleteTask, markTaskAsDone } from "../servoice";
+import { deleteTask, markTaskAsDone } from "../service";
 
 export const TaskManager = () => {
   const { tasks, loading, refreshTasks } = useTasks();

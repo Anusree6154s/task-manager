@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchTasks } from "../servoice";
+import { fetchTasks } from "../service";
 
 export const useTasks = () => {
     const [tasks, setTasks] = useState([]);
