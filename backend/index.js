@@ -7,7 +7,7 @@ const router = require("./routes/task.routes");
 
 
 const app = express();
-const PORT = 8082;
+const PORT = process.env.PORT ;
 const DB_URI = process.env.MONGO_URI;
 // const DB_URI = "mongodb://localhost:27017/task-manager";
 
